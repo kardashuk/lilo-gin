@@ -1,0 +1,3 @@
+home_page:
+    pattern: /
+    defaults: { _controller: LiloHomeBundle:Default:index }
