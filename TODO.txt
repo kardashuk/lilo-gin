@@ -1,0 +1,24 @@
+TechDebt
+- bankAccount setup rework
+- expenses percentage color line / chart
+
+Win sync Server
+- iTunes path config for Win
+
+Transactions
+ - change order from new to last
+ - edit existed
+
+Currency
+ - parse exchange rate
+ - transaction from currency category //rate
+
+Investment
+ - add instruments
+ - add link instrument to transactions
+ - investment profit
+  -- parse current rates of investments
+
+Sync rework
+ - mix backend and front date
+ - sync anytime as has allowed server
