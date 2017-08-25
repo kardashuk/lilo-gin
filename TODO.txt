@@ -22,3 +22,8 @@ Investment
 Sync rework
  - mix backend and front date
  - sync anytime as has allowed server
+
+ 14.08
+ - Fix Uber blokuvanna koshtiv
+// - add dynamic dates for investments & balance
+ - add spam check for blokuvanna koshtiv
