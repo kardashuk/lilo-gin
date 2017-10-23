@@ -24,3 +24,15 @@ Sync rework
  Wife Card
  - parse transactions from wife phone
   -- add transfers from wife card category to wife card
+
+23.10
+ - add synced since date
+  - synced since balance diff
+ - add year expenses + month average expenses
+
+ - add split shares income & deposit income
+ - add alerts & notifications for deposit endings
+
+ - add transactions merge for Captiva
+ - add labels for assets (group all captiva assets)
+
