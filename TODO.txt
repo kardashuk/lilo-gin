@@ -1,5 +1,5 @@
 TechDebt
-- bankAccount setup rework
+- bankAccount setup rework !
 - expenses percentage color line / chart
 
 
@@ -15,9 +15,6 @@ Sync rework
  - mix backend and front date
  - sync anytime as has allowed server
 
- 14.08
- - Fix Uber blokuvanna koshtiv
- - add spam check for blokuvanna koshtiv
 
  29.08
  - add exclude for transactions to skip (health transaction for rotdom Dasha)
