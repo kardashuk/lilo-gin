@@ -5,7 +5,7 @@ TechDebt
 
 Transactions
  - change order from new to last
- - edit existed
+ + edit existed
 
 Investment
  - add instruments
@@ -33,3 +33,8 @@ Sync rework
  - add transactions merge for Captiva
  - add labels for assets (group all captiva assets)
 
+31.12
+ - fix PUBG purchase transaction name
+ + add realDate for transactions
+ - filter transactions graph for last year only
+ - fix graph on new Mac
