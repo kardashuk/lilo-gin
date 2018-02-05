@@ -1,0 +1,168 @@
+<!doctype html> <html lang="en"> <head> <meta charset="utf-8"> <title>Page Not Found :(</title> <link rel="stylesheet" href="fonts/style.css"> <meta name="description" content=""> <meta name="viewport" content="width=device-width,initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> <style>* {
+            margin: 0;
+            padding: 0;
+        }
+        html *{
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .pull-left{
+            float: left;
+        }
+        .pull-right{
+            float:right;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-left{
+            text-align: left;
+        }
+
+        .app-body{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:stretch;
+
+            background: #ededed;
+            font-size: 16px;
+            line-height: 1.35;
+            color: #353535;
+        }
+        .app-header{
+            min-height: 50px;
+
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+            font-size: 26px;
+            padding: 12px 20px 0px;
+        }
+        .app-section{
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            max-height: 100%;
+            overflow: auto;
+        }
+        .app-list{
+            padding: 10px 20px;
+            list-style: none;
+        }
+        .app-list>li{
+            padding: 5px 0;
+        }
+        .app-footer{
+            min-height: 60px;
+
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .app-footer:before{
+            content: '';
+            display: block;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: -10px;
+            height: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+        }
+        .app-filters{
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-end;
+            font-size: 18px;
+
+            font-weight: lighter;
+        }
+        .app-content{
+            min-height: calc(100% - 155px);
+        }
+
+        .filters-a{
+            flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            padding: 0 10px;
+            cursor: pointer;
+            text-align: center;
+            border-bottom: 2px solid rgba(0,0,0,0);
+        }
+        .filters-a:first-child{
+            padding-left: 20px;
+            text-align: left;
+        }
+        .filters-a:last-child{
+            flex-shrink: 2;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .filters-a-active{
+            border-bottom-color: darkred;
+        }
+
+        .footer-nav{
+            height: 100%;
+
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-around;
+            font-weight: lighter;
+        }
+        .footer-a{
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+        }
+        .footer-a-current{
+            color: darkred;
+        }
+        .footer-icon{
+            width: 24px;
+            height: 24px;
+            margin: 10px auto 5px;
+            display: block;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: left;
+        }
+        .content-section{
+            background: #fff;
+            width: calc(100% - 25px);
+            margin-right: 10px;
+        }
+        .content-section-next{
+            width: 15px;
+            margin-right: 0;
+            cursor:pointer;
+        }
+        .app-main_btn{
+            position: fixed;
+            bottom: 80px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            line-height: 60px;
+            background: #23954b;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            border-radius: 50%;
+        }</style> </head> <body class="app-body"> <header class="app-header"> <i class="icon glyph glyph-cool2 pull-right"></i> iBalance </header> <nav class="app-filters filters"> <a class="filters-a">Month</a> <a class="filters-a filters-a-active">Last</a> <a class="filters-a">Year</a> <a class="filters-a">Total</a> <a class="filters-a"><i class="icon glyph glyph-filter"></i></a> </nav> <article class="app-content content"> <section class="content-section app-section"> <ul class="app-list ng-scope"> <li> <span class="pull-right"> 630.00 </span> <a> ⋅ Food </a> </li> <li> <span class="pull-right"> 2,510.33 </span> <a> ⋅ Utilities </a> </li> <li> <span class="pull-right"> -1,650.00 </span> <a> ⋅ Travels </a> </li> <li> <b class="pull-right"> 3,818.87 </b> <br> </li> </ul> <button class="app-main_btn"> <i class="glyph glyph-plus"></i> </button> </section> <section class="app-section content-section content-section-next"> </section> </article> <footer class="app-footer"> <nav class="footer-nav"> <a class="footer-a footer-a-current"> <i class="footer-icon glyph glyph-coin-dollar"></i> Balance </a> <a class="footer-a"> <i class="footer-icon glyph glyph-cart"></i> Expenses </a> <a class="footer-a"> <i class="footer-icon glyph glyph-database"></i> Assets </a> <a class="footer-a"> <i class="footer-icon glyph glyph-library"></i> Investments </a> <a class="footer-a"> <i class="footer-icon glyph glyph-cog"></i> Settings </a> </nav> </footer> </body></html>
