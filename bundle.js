@@ -113253,6 +113253,9 @@ webpackContext.id = 360;
         data: serviceData,
         init: function () {
             serviceData.categoryList = $storage.get('categoryList') || defaultCategories;
+            serviceData.categoryList = _.uniqBy(serviceData.categoryList, function (e) {
+                return JSON.stringify(e);
+            });
             serviceData.categoryTree = buildTree(serviceData.categoryList);
             serviceData.categoryOptions = buildCategoryOptions(serviceData.categoryTree);
             return service;
@@ -114743,7 +114746,10 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
                     categories.push(filter.category);
                 }
             });
-            categories = _.uniq(categories);
+
+            categories = _.uniqBy(categories, function (e) {
+                return JSON.stringify(e);
+            });
             if (categories.length < 2) {
                 return categories[0];
             } else {
