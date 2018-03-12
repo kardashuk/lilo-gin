@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 385);
+/******/ 	return __webpack_require__(__webpack_require__.s = 391);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1905,7 +1905,7 @@ function loadLocale(name) {
         try {
             oldLocale = globalLocale._abbr;
             var aliasedRequire = require;
-            __webpack_require__(359)("./" + name);
+            __webpack_require__(360)("./" + name);
             getSetGlobalLocale(oldLocale);
         } catch (e) {}
     }
@@ -5240,9 +5240,9 @@ exports.silentRejection = function (error) {
 
 
 module.exports = __webpack_require__(30);
-module.exports.easing = __webpack_require__(339);
-module.exports.canvas = __webpack_require__(338);
-module.exports.options = __webpack_require__(340);
+module.exports.easing = __webpack_require__(340);
+module.exports.canvas = __webpack_require__(339);
+module.exports.options = __webpack_require__(341);
 
 
 /***/ }),
@@ -5589,7 +5589,7 @@ exports.services = services;
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(310);
+__webpack_require__(311);
 module.exports = angular;
 
 
@@ -6158,10 +6158,10 @@ exports.trace = trace;
 
 
 module.exports = {};
-module.exports.Arc = __webpack_require__(334);
-module.exports.Line = __webpack_require__(335);
-module.exports.Point = __webpack_require__(336);
-module.exports.Rectangle = __webpack_require__(337);
+module.exports.Arc = __webpack_require__(335);
+module.exports.Line = __webpack_require__(336);
+module.exports.Point = __webpack_require__(337);
+module.exports.Rectangle = __webpack_require__(338);
 
 
 /***/ }),
@@ -10425,10 +10425,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var angular_1 = __webpack_require__(16);
 var core_1 = __webpack_require__(8);
 var views_1 = __webpack_require__(38);
-var templateFactory_1 = __webpack_require__(308);
+var templateFactory_1 = __webpack_require__(309);
 var stateProvider_1 = __webpack_require__(65);
-var onEnterExitRetain_1 = __webpack_require__(307);
-var locationServices_1 = __webpack_require__(305);
+var onEnterExitRetain_1 = __webpack_require__(308);
+var locationServices_1 = __webpack_require__(306);
 var urlRouterProvider_1 = __webpack_require__(66);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
@@ -10645,8 +10645,8 @@ exports.Ng1ViewConfig = Ng1ViewConfig;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var convert = __webpack_require__(355);
-var string = __webpack_require__(353);
+var convert = __webpack_require__(356);
+var string = __webpack_require__(354);
 
 var Color = function (obj) {
 	if (obj instanceof Color) {
@@ -15539,8 +15539,8 @@ module.exports = {
 
 
 var helpers = __webpack_require__(2);
-var basic = __webpack_require__(341);
-var dom = __webpack_require__(342);
+var basic = __webpack_require__(342);
+var dom = __webpack_require__(343);
 
 // @TODO Make possible to select another platform at build time.
 var implementation = dom._enabled ? dom : basic;
@@ -27320,14 +27320,16 @@ module.exports = function(module) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controllers_main__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_ui_section__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__controllers_dashboard__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_date2timestamp__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ui_file__ = __webpack_require__(363);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cache__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__filters_percentage__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controllers_main__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_ui_section__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__controllers_dashboard__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__controllers_dummy__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_date2timestamp__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ui_file__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_cache__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__filters_percentage__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__menu__ = __webpack_require__(368);
 
 
 
@@ -27344,7 +27346,9 @@ module.exports = function(module) {
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.app', []).controller('MainCtrl', __WEBPACK_IMPORTED_MODULE_2__controllers_main__["a" /* default */]).controller('DashboardCtrl', __WEBPACK_IMPORTED_MODULE_4__controllers_dashboard__["a" /* default */]).filter('percentage', __WEBPACK_IMPORTED_MODULE_8__filters_percentage__["a" /* default */]).service('CacheService', __WEBPACK_IMPORTED_MODULE_7__services_cache__["a" /* default */]).directive('uiSection', __WEBPACK_IMPORTED_MODULE_3__directives_ui_section__["a" /* default */]).directive('uiFile', __WEBPACK_IMPORTED_MODULE_6__directives_ui_file__["a" /* default */]).directive('date2timestamp', __WEBPACK_IMPORTED_MODULE_5__directives_date2timestamp__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]).run(['$rootScope', function ($rootScope) {
+
+
+__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.app', []).component('appMenu', __WEBPACK_IMPORTED_MODULE_10__menu__["a" /* default */]).controller('DummyCtrl', __WEBPACK_IMPORTED_MODULE_5__controllers_dummy__["a" /* default */]).controller('MainCtrl', __WEBPACK_IMPORTED_MODULE_2__controllers_main__["a" /* default */]).controller('DashboardCtrl', __WEBPACK_IMPORTED_MODULE_4__controllers_dashboard__["a" /* default */]).filter('percentage', __WEBPACK_IMPORTED_MODULE_9__filters_percentage__["a" /* default */]).service('CacheService', __WEBPACK_IMPORTED_MODULE_8__services_cache__["a" /* default */]).directive('uiSection', __WEBPACK_IMPORTED_MODULE_3__directives_ui_section__["a" /* default */]).directive('uiFile', __WEBPACK_IMPORTED_MODULE_7__directives_ui_file__["a" /* default */]).directive('date2timestamp', __WEBPACK_IMPORTED_MODULE_6__directives_date2timestamp__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]).run(['$rootScope', function ($rootScope) {
     $rootScope.$on('$routeChangeSuccess', function (event, current) {
         $rootScope.title = current.$$route.title;
     });
@@ -27359,11 +27363,12 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.app', []).contr
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__connect__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bank_service__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__connect__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bank_service__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__list_item__ = __webpack_require__(374);
 
 
 
@@ -27374,7 +27379,8 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.app', []).contr
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.bank', []).controller('BankListCtrl', __WEBPACK_IMPORTED_MODULE_2__list__["a" /* default */]).controller('BankItemCtrl', __WEBPACK_IMPORTED_MODULE_3__item__["a" /* default */]).controller('BankConnectCtrl', __WEBPACK_IMPORTED_MODULE_4__connect__["a" /* default */]).service('BankService', __WEBPACK_IMPORTED_MODULE_5__bank_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
+
+__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.bank', []).component('bank', __WEBPACK_IMPORTED_MODULE_6__list_item__["a" /* default */]).controller('BankListCtrl', __WEBPACK_IMPORTED_MODULE_2__list__["a" /* default */]).controller('BankItemCtrl', __WEBPACK_IMPORTED_MODULE_3__item__["a" /* default */]).controller('BankConnectCtrl', __WEBPACK_IMPORTED_MODULE_4__connect__["a" /* default */]).service('BankService', __WEBPACK_IMPORTED_MODULE_5__bank_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.bank'));
 
@@ -27385,10 +27391,10 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.bank', []).cont
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__category_service__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__category_service__ = __webpack_require__(378);
 
 
 
@@ -27408,10 +27414,11 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.category', []).
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_service__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_service__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list_item__ = __webpack_require__(383);
 
 
 
@@ -27420,7 +27427,8 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.category', []).
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.contact', []).controller('ContactListCtrl', __WEBPACK_IMPORTED_MODULE_2__list__["a" /* default */]).controller('ContactItemCtrl', __WEBPACK_IMPORTED_MODULE_3__item__["a" /* default */]).service('ContactService', __WEBPACK_IMPORTED_MODULE_4__contact_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
+
+__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.contact', []).component('contact', __WEBPACK_IMPORTED_MODULE_5__list_item__["a" /* default */]).controller('ContactListCtrl', __WEBPACK_IMPORTED_MODULE_2__list__["a" /* default */]).controller('ContactItemCtrl', __WEBPACK_IMPORTED_MODULE_3__item__["a" /* default */]).service('ContactService', __WEBPACK_IMPORTED_MODULE_4__contact_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.contact'));
 
@@ -27429,19 +27437,19 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.contact', []).c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(359);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_main_scss__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_main_scss__ = __webpack_require__(358);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js__ = __webpack_require__(312);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_chart_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_chart_js__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular_chart_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_download__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_download___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular_download__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_ui_router_lib_index__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_ui_router_lib_index__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_ui_router_lib_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_angular_ui_router_lib_index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular_ui_bootstrap__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular_ui_bootstrap__ = __webpack_require__(301);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular_ui_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_angular_ui_bootstrap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular_local_storage__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular_local_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_angular_local_storage__);
@@ -27485,10 +27493,11 @@ __WEBPACK_IMPORTED_MODULE_9_angular___default.a.module('iBalance.core', [__WEBPA
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter_service__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter_service__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list_item__ = __webpack_require__(388);
 
 
 
@@ -27497,7 +27506,7 @@ __WEBPACK_IMPORTED_MODULE_9_angular___default.a.module('iBalance.core', [__WEBPA
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.filter', []).controller('FilterListCtrl', __WEBPACK_IMPORTED_MODULE_3__list__["a" /* default */]).controller('FilterAddCtrl', __WEBPACK_IMPORTED_MODULE_2__add__["a" /* default */]).service('FilterService', __WEBPACK_IMPORTED_MODULE_4__filter_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.filter', []).component('filter', __WEBPACK_IMPORTED_MODULE_5__list_item__["a" /* default */]).controller('FilterListCtrl', __WEBPACK_IMPORTED_MODULE_3__list__["a" /* default */]).controller('FilterAddCtrl', __WEBPACK_IMPORTED_MODULE_2__add__["a" /* default */]).service('FilterService', __WEBPACK_IMPORTED_MODULE_4__filter_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.filter'));
 
@@ -27508,10 +27517,10 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.filter', []).co
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__instrument__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__instrument__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list__ = __webpack_require__(394);
 
 
 
@@ -27531,11 +27540,11 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.investment', []
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__expenses__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__balance__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__report_service__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__expenses__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__report_service__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__balance__ = __webpack_require__(396);
 
 
 
@@ -27545,7 +27554,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.investment', []
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.report', []).controller('ReportExpensesCtrl', __WEBPACK_IMPORTED_MODULE_3__expenses__["a" /* default */]).controller('ReportBalanceCtrl', __WEBPACK_IMPORTED_MODULE_4__balance__["a" /* default */]).controller('ReportExpensesCtrl', __WEBPACK_IMPORTED_MODULE_3__expenses__["a" /* default */]).controller('ReportCategoriesCtrl', __WEBPACK_IMPORTED_MODULE_2__categories__["a" /* default */]).service('ReportService', __WEBPACK_IMPORTED_MODULE_5__report_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.report', []).component('balance', __WEBPACK_IMPORTED_MODULE_5__balance__["a" /* default */]).controller('ReportExpensesCtrl', __WEBPACK_IMPORTED_MODULE_3__expenses__["a" /* default */]).controller('ReportExpensesCtrl', __WEBPACK_IMPORTED_MODULE_3__expenses__["a" /* default */]).controller('ReportCategoriesCtrl', __WEBPACK_IMPORTED_MODULE_2__categories__["a" /* default */]).service('ReportService', __WEBPACK_IMPORTED_MODULE_4__report_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.report'));
 
@@ -27556,9 +27565,10 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.report', []).co
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(395);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sms_service__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sms_service__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_item__ = __webpack_require__(401);
 
 
 
@@ -27566,7 +27576,8 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.report', []).co
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.sms', []).controller('SmsListCtrl', __WEBPACK_IMPORTED_MODULE_2__list__["a" /* default */]).service('SmsService', __WEBPACK_IMPORTED_MODULE_3__sms_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
+
+__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.sms', []).controller('SmsListCtrl', __WEBPACK_IMPORTED_MODULE_2__list__["a" /* default */]).component('sms', __WEBPACK_IMPORTED_MODULE_4__list_item__["a" /* default */]).service('SmsService', __WEBPACK_IMPORTED_MODULE_3__sms_service__["a" /* default */]).config(__WEBPACK_IMPORTED_MODULE_1__router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.sms'));
 
@@ -27577,11 +27588,11 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance.sms', []).contr
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categorize__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__transaction_service__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categorize__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__transaction_service__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add__ = __webpack_require__(405);
 
 
 
@@ -39261,7 +39272,7 @@ module.exports=v1
 /* 269 */
 /***/ (function(module, exports) {
 
-var v1='<a class=h5 href=#!/dashboard>Dashboard</a> <a class=h5 href=#!/transaction/list>Transactions</a> <a class=h5 href=#!/report/expenses>Expenses</a> <a class=h5 href=#!/investment/list>Investments</a><h5 class=h5 ng-click="_.settingsOpen = !_.settingsOpen">Settings</h5><ul ng-if=_.settingsOpen class=app-main-sub_menu_list><li><a href=#!/sms/list>SMS list</a></li><li><a href=#!/contact/list>Contacts</a></li><li><a href=#!/bank/list>Bank Accounts</a></li><li><a href=#!/category/list>Categories</a></li><li><a href=#!/filter/list>Filters</a></li><li class=static ng-controller=DashboardCtrl><span class=static-title>Backup</span><ul><li><span ng-click=syncAll() ng-disabled=sync.$syncing>{{!sync.$syncing?\'Sync\':\'Syncing\'}}</span></li><li><a class=download-btn ng-click=downloadBackup()>Download</a></li><li><span class=file>Restore <input type=file ui-file="restoreBackup($fileContent)"></span></li><li><span ng-click="clearStorage()">Clear ALL DATA</li></ul></li></ul><small class="sub-heading hidden-xs">Current Balance</small><hr class="hidden-xs"><ng-include src="\'scripts/report/balance.block.html\'"></ng-include>';
+var v1='<a class=h5 href=#!/dashboard>Dashboard</a> <a class=h5 href=#!/transaction/list>Transactions</a> <a class=h5 href=#!/report/expenses>Expenses</a> <a class=h5 href=#!/investment/list>Investments</a><h5 class=h5 ng-click="_.settingsOpen = !_.settingsOpen">Settings</h5><ul ng-if=_.settingsOpen class=app-main-sub_menu_list><li><a href=#!/sms/list>SMS list</a></li><li><a href=#!/contact/list>Contacts</a></li><li><a href=#!/bank/list>Bank Accounts</a></li><li><a href=#!/category/list>Categories</a></li><li><a href=#!/filter/list>Filters</a></li><li class=static ng-controller=DashboardCtrl><span class=static-title>Backup</span><ul><li><span ng-click=syncAll() ng-disabled=sync.$syncing>{{!sync.$syncing?\'Sync\':\'Syncing\'}}</span></li><li><a class=download-btn ng-click=downloadBackup()>Download</a></li><li><span class=file>Restore <input type=file ui-file="restoreBackup($fileContent)"></span></li><li><span ng-click="clearStorage()">Clear ALL DATA</li></ul></li></ul><small class="sub-heading hidden-xs">Current Balance</small><hr class="hidden-xs"><balance></balance>';
 angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/app/menu.html', v1);}]);
 module.exports=v1
 
@@ -39269,36 +39280,44 @@ module.exports=v1
 /* 270 */
 /***/ (function(module, exports) {
 
-var v1='<form ng-if="connection.step==\'name\'" class=app-form novalidate ng-submit=nextStep();><div class=form-group><label for=bank.name>Bank Name</label><input class=form-control autofocus id=bank.name ng-model="bank.name"></div><button class="main-action btn btn-success" type=submit ng-disabled=!bank.name><i class="glyphicon glyphicon-ok"></i></button></form><div ng-if="connection.step==\'contact\'" class=app-form><div class=form-group><label>Chose Contact for SMS-banking</label></div><ul><li ng-repeat="c in contactService.getContactList()" ng-click="bank.contact=c;nextStep();">{{c}}</li></ul></div><form novalidate ng-submit=nextStep() ng-if="connection.step==\'keywords.deductions\'" class=app-form><div class=form-group><label for=bank.keywords.deduction>Deduction SMS keywords</label><input class=form-control autofocus id=bank.keywords.deduction ng-model="bank.keywords.deduction"></div><div><h6 class=app-sub_heading>Preview matches</h6><ul class=app-list><li ng-repeat="data in bankSmsList" ng-class="{\n                    \'success\': isDeduction(data)\n                }" ng-include="\'scripts/sms/list-item.html\'"></li></ul></div><button class="main-action btn btn-success" ng-disabled=!bank.keywords.deduction><i class="glyphicon glyphicon-ok"></i></button></form><form novalidate ng-submit=nextStep() ng-if="connection.step==\'keywords.income\'" class=app-form><div class=form-group><label for=bank.keywords.deduction>Income SMS keywords</label><input class=form-control autofocus id=bank.keywords.income ng-model="bank.keywords.income"></div><div><h6 class=app-sub_heading>Preview matches</h6><ul class=app-list><li ng-repeat="data in bankSmsList" ng-class="{\n                    \'success\': isIncome(data),\n                    \'disabled\': isDeduction(data),\n                    \'error\': isIncomeAndDeduction(data)\n                }"><div ng-include="\'scripts/sms/list-item.html\'"></div><div class=app-error ng-if=isIncomeAndDeduction(data)>Simultaneously in income & deductions. Please check keywords</div></li></ul></div><button class="main-action btn btn-success" ng-disabled="!bank.keywords.income || isHasSmsParseErrors([isIncomeAndDeduction])"><i class="glyphicon glyphicon-ok"></i></button></form><form novalidate ng-submit=nextStep() ng-if="connection.step==\'keywords.cash\'" class=app-form><div class=form-group><label for=bank.keywords.deduction>Cash SMS keywords</label><input class=form-control autofocus id=bank.keywords.cash ng-model="bank.keywords.cash"></div><div><h6 class=app-sub_heading>Preview matches</h6><ul class=app-list><li ng-repeat="data in bankSmsList" ng-class="{\n                    \'success\': isCash(data),\n                    \'disabled\': isDeduction(data) || isIncome(data),\n                    \'error\': isIncomeOrDeductionAndCash(data)\n                }"><div ng-include="\'scripts/sms/list-item.html\'"></div><div class=app-error ng-if=isIncomeOrDeductionAndCash(data)>Simultaneously in cash & income/deductions. Please check keywords</div></li></ul></div><button class="main-action btn btn-success" ng-disabled="!bank.keywords.income || isHasSmsParseErrors([isIncomeOrDeductionAndCash])"><i class="glyphicon glyphicon-ok"></i></button></form>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/add.page.html', v1);}]);
+var v1='<a class=h5 href=#!/dashboard>Dashboard</a> <a class=h5 href=#!/transaction/list>Transactions</a> <a class=h5 href=#!/report/expenses>Expenses</a> <a class=h5 href=#!/investment/list>Investments</a><h5 class=h5 ng-click="_.settingsOpen = !_.settingsOpen">Settings</h5><ul ng-if=_.settingsOpen class=app-main-sub_menu_list><li><a href=#!/sms/list>SMS list</a></li><li><a href=#!/contact/list>Contacts</a></li><li><a href=#!/bank/list>Bank Accounts</a></li><li><a href=#!/category/list>Categories</a></li><li><a href=#!/filter/list>Filters</a></li><li class=static ng-controller=DashboardCtrl><span class=static-title>Backup</span><ul><li><span ng-click=syncAll() ng-disabled=sync.$syncing>{{!sync.$syncing?\'Sync\':\'Syncing\'}}</span></li><li><a class=download-btn ng-click=downloadBackup()>Download</a></li><li><span class=file>Restore <input type=file ui-file="restoreBackup($fileContent)"></span></li><li><span ng-click="clearStorage()">Clear ALL DATA</li></ul></li></ul><small class="sub-heading hidden-xs">Current Balance</small><hr class="hidden-xs"><balance></balance>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/app/menu/menu.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 271 */
 /***/ (function(module, exports) {
 
-var v1='<ul class="app-list visible-xs"><li ng-repeat="data in bankService.getBankSmsList(bank)" ng-include="\'scripts/sms/list-item.html\'"></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in bankService.getBankList()" ng-include="\'scripts/bank/list-item.html\'"></li></ul></div><div class="col-xs-6 app-main-col col-details"><ul class=app-list><li ng-repeat="data in bankService.getBankSmsList(bank)" ng-include="\'scripts/sms/list-item.html\'"></li></ul></div></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/item.page.html', v1);}]);
+var v1='<form ng-if="connection.step==\'name\'" class=app-form novalidate ng-submit=nextStep();><div class=form-group><label for=bank.name>Bank Name</label><input class=form-control autofocus id=bank.name ng-model="bank.name"></div><button class="main-action btn btn-success" type=submit ng-disabled=!bank.name><i class="glyphicon glyphicon-ok"></i></button></form><div ng-if="connection.step==\'contact\'" class=app-form><div class=form-group><label>Chose Contact for SMS-banking</label></div><ul><li ng-repeat="c in contactService.getContactList()" ng-click="bank.contact=c;nextStep();">{{c}}</li></ul></div><form novalidate ng-submit=nextStep() ng-if="connection.step==\'keywords.deductions\'" class=app-form><div class=form-group><label for=bank.keywords.deduction>Deduction SMS keywords</label><input class=form-control autofocus id=bank.keywords.deduction ng-model="bank.keywords.deduction"></div><div><h6 class=app-sub_heading>Preview matches</h6><ul class=app-list><li ng-repeat="data in bankSmsList" ng-class="{\n                    \'success\': isDeduction(data)\n                }"><sms data=data></sms></li></ul></div><button class="main-action btn btn-success" ng-disabled=!bank.keywords.deduction><i class="glyphicon glyphicon-ok"></i></button></form><form novalidate ng-submit=nextStep() ng-if="connection.step==\'keywords.income\'" class=app-form><div class=form-group><label for=bank.keywords.deduction>Income SMS keywords</label><input class=form-control autofocus id=bank.keywords.income ng-model="bank.keywords.income"></div><div><h6 class=app-sub_heading>Preview matches</h6><ul class=app-list><li ng-repeat="data in bankSmsList" ng-class="{\n                    \'success\': isIncome(data),\n                    \'disabled\': isDeduction(data),\n                    \'error\': isIncomeAndDeduction(data)\n                }"><sms data=data></sms><div class=app-error ng-if=isIncomeAndDeduction(data)>Simultaneously in income & deductions. Please check keywords</div></li></ul></div><button class="main-action btn btn-success" ng-disabled="!bank.keywords.income || isHasSmsParseErrors([isIncomeAndDeduction])"><i class="glyphicon glyphicon-ok"></i></button></form><form novalidate ng-submit=nextStep() ng-if="connection.step==\'keywords.cash\'" class=app-form><div class=form-group><label for=bank.keywords.deduction>Cash SMS keywords</label><input class=form-control autofocus id=bank.keywords.cash ng-model="bank.keywords.cash"></div><div><h6 class=app-sub_heading>Preview matches</h6><ul class=app-list><li ng-repeat="data in bankSmsList" ng-class="{\n                    \'success\': isCash(data),\n                    \'disabled\': isDeduction(data) || isIncome(data),\n                    \'error\': isIncomeOrDeductionAndCash(data)\n                }"><sms data=data></sms><div class=app-error ng-if=isIncomeOrDeductionAndCash(data)>Simultaneously in cash & income/deductions. Please check keywords</div></li></ul></div><button class="main-action btn btn-success" ng-disabled="!bank.keywords.income || isHasSmsParseErrors([isIncomeOrDeductionAndCash])"><i class="glyphicon glyphicon-ok"></i></button></form>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/add.page.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 272 */
 /***/ (function(module, exports) {
 
-var v1='<a href=#!/bank/{{data.name}} class=ui-section-header>{{data.name}}</a>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/list-item.html', v1);}]);
+var v1='<ul class="app-list visible-xs"><li ng-repeat="data in bankService.getBankSmsList(bank)"><sms data=data></sms></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in bankService.getBankList()"><bank data=data></bank></li></ul></div><div class="col-xs-6 app-main-col col-details"><ul class=app-list><li ng-repeat="data in bankService.getBankSmsList(bank)"><sms data=data></sms></li></ul></div></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/item.page.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 273 */
 /***/ (function(module, exports) {
 
-var v1='<div class="app-list visible-xs"><div ng-repeat="data in bankService.getBankList()" ng-include="\'scripts/bank/list-item.html\'"></div></div><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in bankService.getBankList()" ng-include="\'scripts/bank/list-item.html\'"></li></ul></div></div><a href=#!/bank/add class="btn btn-success main-action"><i class="glyphicon glyphicon-plus"></i></a>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/list.page.html', v1);}]);
+var v1='<a href=#!/bank/{{$ctrl.data.name}} class=ui-section-header>{{$ctrl.data.name}}</a>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/list-item/list-item.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 274 */
+/***/ (function(module, exports) {
+
+var v1='<div class="app-list visible-xs"><div ng-repeat="data in bankService.getBankList()"><bank data=data></bank></div></div><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in bankService.getBankList()"><bank data=data></bank></li></ul></div></div><a href=#!/bank/add class="btn btn-success main-action"><i class="glyphicon glyphicon-plus"></i></a>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/bank/list.page.html', v1);}]);
+module.exports=v1
+
+/***/ }),
+/* 275 */
 /***/ (function(module, exports) {
 
 var v1='<form novalidate name=category.form><div class=modal-header><h4>Add Category In {{parent.name}}</h4></div><div class=modal-body><div class=form-group><label>Name</label><input class=form-control ng-model="category.name"></div></div><div class="modal-footer text-center"><button class="btn btn-default" type=button ng-click=cancel()>Cancel</button> <button class="btn btn-success" ng-disabled=!category.name ng-click=save()>Save</button></div></form>';
@@ -39306,7 +39325,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, exports) {
 
 var v1='<i class="add-icon pull-left glyphicon glyphicon-plus-sign" ng-click=addCategory(c0)></i><h4>{{c0.name}}</h4><ul ng-if=c0.child.length><li ng-repeat="c1 in c0.child"><i class="add-icon pull-left glyphicon glyphicon-plus" ng-click=addCategory(c1)></i> <i class="remove-icon pull-right glyphicon glyphicon-remove" ng-click=removeCategory(c1)></i> <span class="category-balance pull-right">{{report[c0.name+\':\'+c1.name].balance|currency:\'\'}}</span><h5><a href="#!/transaction/list?category={{c0.name+\':\'+c1.name}}">{{c1.name}}</a></h5><ul ng-if=c1.child.length><li ng-repeat="c2 in c1.child" ng-if="c0.name+\':\'+c1.name+\':\'+c2.name!==\'Liabilities:Bank Accounts:Initial\'"><i class="remove-icon pull-right glyphicon glyphicon-remove" ng-click=removeCategory(c2)></i> <span class="category-balance pull-right">{{report[c0.name+\':\'+c1.name+\':\'+c2.name].balance|currency:\'\'}}</span><h6><a href="#!/transaction/list?category={{c0.name+\':\'+c1.name+\':\'+c2.name}}">{{c2.name}}</a></h6></li></ul></li></ul>';
@@ -39314,7 +39333,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, exports) {
 
 var v1='<ul class="app-tree visible-xs"><li ng-repeat="c0 in categoryData.categoryTree" ng-include="\'scripts/category/item.html\'"></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items-lg" ng-init="report = reportService.getCategoriesReport()"><div class=row><div class=col-xs-6><ul class=app-tree><li ng-repeat="c0 in categoryData.categoryTree" ng-if="c0.name !== \'Expenses\' && c0.name !==\'Revenue\'" ng-include="\'scripts/category/item.html\'"></li></ul></div><div class=col-xs-6><ul class=app-tree><li ng-repeat="c0 in categoryData.categoryTree" ng-if="c0.name  === \'Expenses\' || c0.name === \'Revenue\'" ng-include="\'scripts/category/item.html\'"></li></ul></div></div></div></div>';
@@ -39322,31 +39341,31 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 277 */
-/***/ (function(module, exports) {
-
-var v1='<ul class="app-list visible-xs"><li ng-repeat="data in contactService.getContactSmsList(contactName)" ng-include="\'scripts/sms/list-item.html\'"></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in contactService.getContactList()" ng-include="\'scripts/contact/list-item.html\'"></li></ul></div><div class="col-xs-6 app-main-col col-details"><ul class=app-list><li ng-repeat="data in contactService.getContactSmsList(contactName)" ng-include="\'scripts/sms/list-item.html\'"></li></ul></div></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/contact/item.page.html', v1);}]);
-module.exports=v1
-
-/***/ }),
 /* 278 */
 /***/ (function(module, exports) {
 
-var v1='<a href=#!/contact/{{data}} class=ui-section-header>{{data}}</a>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/contact/list-item.html', v1);}]);
+var v1='<ul class="app-list visible-xs"><li ng-repeat="data in contactService.getContactSmsList(contactName)"><sms data=data></sms></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in contactService.getContactList()"><contact data=data></contact></li></ul></div><div class="col-xs-6 app-main-col col-details"><ul class=app-list><li ng-repeat="data in contactService.getContactSmsList(contactName)"><sms data=data></sms></li></ul></div></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/contact/item.page.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 279 */
 /***/ (function(module, exports) {
 
-var v1='<div class="app-list visible-xs"><div ng-repeat="data in contactService.getContactList()" ng-include="\'scripts/contact/list-item.html\'"></div></div><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in contactService.getContactList()" ng-include="\'scripts/contact/list-item.html\'"></li></ul></div></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/contact/list.page.html', v1);}]);
+var v1='<a href=#!/contact/{{$ctrl.data}} class=ui-section-header>{{$ctrl.data}}</a>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/contact/list-item/list-item.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 280 */
+/***/ (function(module, exports) {
+
+var v1='<div class="app-list visible-xs"><div ng-repeat="data in contactService.getContactList()"><contact data=data></contact></div></div><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in contactService.getContactList()"><contact data=data></contact></li></ul></div></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/contact/list.page.html', v1);}]);
+module.exports=v1
+
+/***/ }),
+/* 281 */
 /***/ (function(module, exports) {
 
 var v1='<form novalidate><div class=modal-body><div class=row><div class=col-xs-12><div class=form-group><label>Match Place Text</label><input class=form-control ng-model="filter.text"></div></div><div class=col-xs-12><div class=form-group><label>To Category</label><select class=form-control ng-model=filter.category><optgroup ng-repeat-start="c in categoryService.data.categoryOptions" label={{c.name}} ng-if="c.type==\'group\'"></optgroup><option ng-repeat-end value={{c.value}} ng-if="c.type==\'option\'">{{c.name}}</select></div></div></div></div><div class=modal-footer><button class="btn btn-default" ng-click=cancel();>Cancel</button> <button class="btn btn-success" ng-disabled="!filter.text || !filter.category" ng-click=save()>Save</button></div></form>';
@@ -39354,31 +39373,31 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 281 */
-/***/ (function(module, exports) {
-
-var v1='<div class=pull-right>{{data.category}}</div><div>{{data.text}}</div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/filter/list-item.html', v1);}]);
-module.exports=v1
-
-/***/ }),
 /* 282 */
 /***/ (function(module, exports) {
 
-var v1='<div class=app-main-row><span ng-click=goBack() class=head-menu-icon><i class="glyphicon glyphicon-circle-arrow-left"></i></span><div class="hidden-xs col-sm-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-12 col-sm-5 col-lg-4 app-main-col col-items-md"><ul class=app-list><li ng-repeat="data in filterService.getFilterList()" ng-include="\'scripts/filter/list-item.html\'"></li></ul></div></div><button class="main-action btn btn-success" ng-click=filterService.addFilter()><i class="glyphicon glyphicon-plus"></i></button>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/filter/list.page.html', v1);}]);
+var v1='<div class=pull-right>{{$ctrl.data.category}}</div><div>{{$ctrl.data.text}}</div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/filter/list-item/list-item.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 283 */
 /***/ (function(module, exports) {
 
-var v1='<div class=page><nav class=page-nav><div class=pull-left><a href=#!/menu><i class="glyphicon glyphicon-menu-hamburger"></i></a></div><a ng-click="showTab(\'balance\')" ng-class="{selected:tab===\'balance\'}">Balance</a> <a ng-click="showTab(\'investments\')" ng-class="{selected:tab===\'investments\'}">Investments</a><div class=pull-right ng-controller=DashboardCtrl><button type=button class="sync-btn btn btn-link" ng-click=syncAll() ng-disabled=sync.$syncing><i class="glyphicon glyphicon-refresh"></i> <span class=hidden-xs>{{!sync.$syncing?\'Sync\':\'Syncing\'}}</span></button><div class=shader ng-if=sync.$syncing><span>Syncing</span></div></div></nav><article class=page-container ng-controller=InvestmentListCtrl ng-if="tab==\'investments\'"><section><div class=row><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-total"><h6>Total</h6>Amount: <b>{{totalAmount()|currency:\'\'}}</b><br>Profit: <b>{{totalProfit()|currency:\'\'}}</b><br>ROI: <b>{{totalROI()|percentage}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-total"><h6>Last Month</h6>Profit: <b>{{perMonthProfit()|currency:\'\'}}</b><br>ROI: <b>{{perMonthROI()|percentage}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-total"><h6>This Month</h6>Profit: <b>{{thisMonthProfit()|currency:\'\'}}</b><br>ROI: <b>{{thisMonthROI()|percentage}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 pull-right"><div class="investment-card investment-card-total"><h6>Courses</h6>$: {{calcDollarReal()|currency:\'\'}} <b>{{courses.dollar|currency:\'\'}}</b><br>\u20AC: {{calcEuroReal()|currency:\'\'}} <b>{{courses.euro|currency:\'\'}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 pull-right"><div class="investment-card investment-card-total"><h6>Shares</h6>OTP Shares: <b>{{courses[\'otp-shares\']|currency:\'\'}}</b><br>OTP Classic: <b>{{courses[\'otp-classic\']|currency:\'\'}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 pull-right"><div class="investment-card investment-card-total"><h6>Courses Profit</h6>$: <b>{{calcDollarProfit()|currency:\'\'}}</b><br>\u20AC: <b>{{calcEuroProfit()|currency:\'\'}}</b></div></div></div></section><section class=section-white><h4 class=section-header>Cash Flow</h4><div class=row><div class="col-xs-12 col-sm-6"><canvas id=profit-chart class="chart chart-line" chart-data=profitChart.data chart-options={height:200} chart-series=profitChart.series chart-labels=profitChart.labels></canvas></div><div class="col-xs-12 col-sm-6"><canvas id=investment-chart class="chart chart-bar" chart-data=investmentsChart.data chart-options={height:200} chart-series=investmentsChart.series chart-labels=investmentsChart.labels></canvas></div></div></section><section><h4 class=section-header>Investments</h4><div class=row><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" ng-repeat="i in inv =(investments|orderBy:[\'ended\',\'date\']:[false,false])"><div class=investment-card ng-class="{\'investment-card-ended\':i.ended}"><h6>{{instrument(i.instrument).bank}}:<br class="visible-xs">{{instrument(i.instrument).name}}</h6><small><span ng-if=i.ended class=pull-right>{{i.ended|date:\'dd/MM/yyyy\'}}</span> {{i.date|date:\'dd/MM/yyyy\'}}</small> Amount: <b>{{i.amount|currency:\'\'}}</b><br>Profit: <b>{{calcProfit(i)|currency:\'\'}}</b><br>ROI: <b>{{calcROI(i)|percentage}}</b><br>$ROI: <b>{{calcUsdROI(i)|percentage}}</b></div></div><div class="col-xs-12 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-add"><i class="icon glyphicon glyphicon-briefcase"></i><h6>Add Investment</h6></div></div></div></section></article><article class=page-container ng-if="tab==\'balance\'"><section ng-controller=TransactionListCtrl><div class=row ng-if=transactionsCount()><div class=col-xs-12><h4 class=section-header>Transactions</h4><div class=col-content ng-include="\'scripts/transaction/list.view.html\'"></div></div></div></section><section class=section-white ng-controller=ReportExpensesCtrl><div class=row><div class="col-xs-12 col-sm-3"><h4 class=section-header>Expenses</h4><div class="col-content expenses-list" ng-include="\'scripts/report/expenses.block.html\'"></div></div><div class="col-xs-12 col-sm-9"><div class=row><div class="col-xs-12 col-sm-4 doughnut-chart"><h4 class="section-header text-center">This Month Expenses</h4><div class=doughnut-total>{{expensesChart.total|currency:\'\'}}</div><canvas id=expenses-chart class="chart chart-doughnut" chart-data=expensesChart.data chart-options={height:100} chart-series=expensesChart.series chart-labels=expensesChart.labels></canvas><br></div><div class="col-xs-12 col-sm-4 doughnut-chart"><h4 class="section-header text-center">Last Month Expenses</h4><div class=doughnut-total>{{expensesPrevChart.total|currency:\'\'}}</div><canvas id=expenses-prev-chart class="chart chart-doughnut" chart-data=expensesPrevChart.data chart-options={height:100} chart-series=expensesPrevChart.series chart-labels=expensesPrevChart.labels></canvas><br></div><div class="col-xs-12 col-sm-4 doughnut-chart"><h4 class="section-header text-center">All Expenses</h4><div class=doughnut-total>{{expensesAllChart.total|currency:\'\'}}</div><canvas id=expenses-all-chart class="chart chart-doughnut" chart-data=expensesAllChart.data chart-options={height:100} chart-series=expensesAllChart.series chart-labels=expensesAllChart.labels></canvas><br></div></div><button class="btn btn-success pull-right hidden-xs" ng-click=transactionService.addTransaction().then(pageReload);>Add New</button> <button class="main-action btn btn-success pull-right visible-xs" ng-click=transactionService.addTransaction().then(pageReload);><i class="glyphicon glyphicon-plus"></i></button></div></div></section><section class=section-white><div class=row><div class="col-xs-12 col-sm-3"><h4 class=section-header>Balance</h4><div class="col-content balance-sheet" ng-include="\'scripts/report/balance.block.html\'"></div></div><div class="col-xs-12 col-sm-9"><canvas id=money-chart class="chart chart-line" chart-data=moneyChart.data chart-options={height:100} chart-series=moneyChart.series chart-labels=moneyChart.labels></canvas></div></div></section></article></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/investment/dashboard.page.html', v1);}]);
+var v1='<div class=app-main-row><span ng-click=goBack() class=head-menu-icon><i class="glyphicon glyphicon-circle-arrow-left"></i></span><div class="hidden-xs col-sm-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-12 col-sm-5 col-lg-4 app-main-col col-items-md"><ul class=app-list><li ng-repeat="data in filterService.getFilterList()"><filter data=data></filter></li></ul></div></div><button class="main-action btn btn-success" ng-click=filterService.addFilter()><i class="glyphicon glyphicon-plus"></i></button>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/filter/list.page.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 284 */
+/***/ (function(module, exports) {
+
+var v1='<div class=page><nav class=page-nav><div class=pull-left><a href=#!/menu><i class="glyphicon glyphicon-menu-hamburger"></i></a></div><a ng-click="showTab(\'balance\')" ng-class="{selected:tab===\'balance\'}">Balance</a> <a ng-click="showTab(\'investments\')" ng-class="{selected:tab===\'investments\'}">Investments</a><div class=pull-right ng-controller=DashboardCtrl><button type=button class="sync-btn btn btn-link" ng-click=syncAll() ng-disabled=sync.$syncing><i class="glyphicon glyphicon-refresh"></i> <span class=hidden-xs>{{!sync.$syncing?\'Sync\':\'Syncing\'}}</span></button><div class=shader ng-if=sync.$syncing><span>Syncing</span></div></div></nav><article class=page-container ng-controller=InvestmentListCtrl ng-if="tab==\'investments\'"><section><div class=row><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-total"><h6>Total</h6>Amount: <b>{{totalAmount()|currency:\'\'}}</b><br>Profit: <b>{{totalProfit()|currency:\'\'}}</b><br>ROI: <b>{{totalROI()|percentage}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-total"><h6>Last Month</h6>Profit: <b>{{perMonthProfit()|currency:\'\'}}</b><br>ROI: <b>{{perMonthROI()|percentage}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-total"><h6>This Month</h6>Profit: <b>{{thisMonthProfit()|currency:\'\'}}</b><br>ROI: <b>{{thisMonthROI()|percentage}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 pull-right"><div class="investment-card investment-card-total"><h6>Courses</h6>$: {{calcDollarReal()|currency:\'\'}} <b>{{courses.dollar|currency:\'\'}}</b><br>\u20AC: {{calcEuroReal()|currency:\'\'}} <b>{{courses.euro|currency:\'\'}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 pull-right"><div class="investment-card investment-card-total"><h6>Shares</h6>OTP Shares: <b>{{courses[\'otp-shares\']|currency:\'\'}}</b><br>OTP Classic: <b>{{courses[\'otp-classic\']|currency:\'\'}}</b></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 pull-right"><div class="investment-card investment-card-total"><h6>Courses Profit</h6>$: <b>{{calcDollarProfit()|currency:\'\'}}</b><br>\u20AC: <b>{{calcEuroProfit()|currency:\'\'}}</b></div></div></div></section><section class=section-white><h4 class=section-header>Cash Flow</h4><div class=row><div class="col-xs-12 col-sm-6"><canvas id=profit-chart class="chart chart-line" chart-data=profitChart.data chart-options={height:200} chart-series=profitChart.series chart-labels=profitChart.labels></canvas></div><div class="col-xs-12 col-sm-6"><canvas id=investment-chart class="chart chart-bar" chart-data=investmentsChart.data chart-options={height:200} chart-series=investmentsChart.series chart-labels=investmentsChart.labels></canvas></div></div></section><section><h4 class=section-header>Investments</h4><div class=row><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" ng-repeat="i in inv =(investments|orderBy:[\'ended\',\'date\']:[false,false])"><div class=investment-card ng-class="{\'investment-card-ended\':i.ended}"><h6>{{instrument(i.instrument).bank}}:<br class="visible-xs">{{instrument(i.instrument).name}}</h6><small><span ng-if=i.ended class=pull-right>{{i.ended|date:\'dd/MM/yyyy\'}}</span> {{i.date|date:\'dd/MM/yyyy\'}}</small> Amount: <b>{{i.amount|currency:\'\'}}</b><br>Profit: <b>{{calcProfit(i)|currency:\'\'}}</b><br>ROI: <b>{{calcROI(i)|percentage}}</b><br>$ROI: <b>{{calcUsdROI(i)|percentage}}</b></div></div><div class="col-xs-12 col-sm-4 col-md-3 col-lg-2"><div class="investment-card investment-card-add"><i class="icon glyphicon glyphicon-briefcase"></i><h6>Add Investment</h6></div></div></div></section></article><article class=page-container ng-if="tab==\'balance\'"><section ng-controller=TransactionListCtrl><div class=row ng-if=transactionsCount()><div class=col-xs-12><h4 class=section-header>Transactions</h4><div class=col-content ng-include="\'scripts/transaction/list.view.html\'"></div></div></div></section><section class=section-white ng-controller=ReportExpensesCtrl><div class=row><div class="col-xs-12 col-sm-3"><h4 class=section-header>Expenses</h4><div class="col-content expenses-list" ng-include="\'scripts/report/expenses.block.html\'"></div></div><div class="col-xs-12 col-sm-9"><div class=row><div class="col-xs-12 col-sm-4 doughnut-chart"><h4 class="section-header text-center">This Month Expenses</h4><div class=doughnut-total>{{expensesChart.total|currency:\'\'}}</div><canvas id=expenses-chart class="chart chart-doughnut" chart-data=expensesChart.data chart-options={height:100} chart-series=expensesChart.series chart-labels=expensesChart.labels></canvas><br></div><div class="col-xs-12 col-sm-4 doughnut-chart"><h4 class="section-header text-center">Last Month Expenses</h4><div class=doughnut-total>{{expensesPrevChart.total|currency:\'\'}}</div><canvas id=expenses-prev-chart class="chart chart-doughnut" chart-data=expensesPrevChart.data chart-options={height:100} chart-series=expensesPrevChart.series chart-labels=expensesPrevChart.labels></canvas><br></div><div class="col-xs-12 col-sm-4 doughnut-chart"><h4 class="section-header text-center">All Expenses</h4><div class=doughnut-total>{{expensesAllChart.total|currency:\'\'}}</div><canvas id=expenses-all-chart class="chart chart-doughnut" chart-data=expensesAllChart.data chart-options={height:100} chart-series=expensesAllChart.series chart-labels=expensesAllChart.labels></canvas><br></div></div><button class="btn btn-success pull-right hidden-xs" ng-click=transactionService.addTransaction().then(pageReload);>Add New</button> <button class="main-action btn btn-success pull-right visible-xs" ng-click=transactionService.addTransaction().then(pageReload);><i class="glyphicon glyphicon-plus"></i></button></div></div></section><section class=section-white><div class=row><div class="col-xs-12 col-sm-3"><h4 class=section-header>Balance</h4><div class="col-content balance-sheet"><balance></balance></div></div><div class="col-xs-12 col-sm-9"><canvas id=money-chart class="chart chart-line" chart-data=moneyChart.data chart-options={height:100} chart-series=moneyChart.series chart-labels=moneyChart.labels></canvas></div></div></section></article></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/investment/dashboard.page.html', v1);}]);
+module.exports=v1
+
+/***/ }),
+/* 285 */
 /***/ (function(module, exports) {
 
 var v1='<div class=app-main-row><a href=#!/investment/list class=head-menu-icon><i class="glyphicon glyphicon-circle-arrow-left"></i></a><div class="hidden-xs col-sm-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div></div>';
@@ -39386,7 +39405,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 285 */
+/* 286 */
 /***/ (function(module, exports) {
 
 var v1='<div class=app-main-row><a href=#!/investment/instrument class=head-menu-icon><i class="glyphicon glyphicon-cog"></i></a><div class="hidden-xs col-sm-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-12 col-sm-4 col-lg-4 app-main-col col-items"><pre class=pull-right>\n$: {{calcDollarProfit()|currency:\'\'}}\n\u20AC: {{calcEuroProfit()|currency:\'\'}}\n        </pre><pre class=pull-left>Courses: {{courses|json}}</pre><div class=clearfix></div><ul class=app-list ng-init="_.profit = 0;"><li ng-repeat="i in investments" ng-init="_.profit = _.profit + calcProfit(i)"><pre style=font-size:10px;line-height:1;float:right ng-if=i.start>{{i.start|json}}</pre><b style=color:rgba(0,0,0,.7)>{{i.instrument}} {{i.amount|currency:\'\'}}</b><br><small>{{i.date|date:\'HH:mm dd/MM/yyyy\'}}</small><br>Profit: <b>{{calcProfit(i)|currency:\'\'}}</b></li><li>Total: <b>{{_.profit|currency:\'\'}}</b></li></ul></div><div class="col-xs-12 col-sm-6 col-lg-4 app-main-col col-details hidden-xs" ng-class="{\'hidden-xs\':_.showFilter}"><pre>{{stats|json}}</pre></div></div>';
@@ -39394,18 +39413,10 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 286 */
-/***/ (function(module, exports) {
-
-var v1='<div ng-controller=ReportCategoriesCtrl ng-init="_.total = 0;_.cash=0;"><div ng-repeat="data in reportService.getCategoriesReport();" ng-if="data.value.indexOf(\'Expenses\')!==0 && data.value.indexOf(\'Revenue\')!==0"><h6 ng-if="data.lvl===0">{{data.category}}</h6><div ng-if="data.value === \'Assets:Cash\'" ng-init="_.cash = data.balance;"></div><div ng-if="data.lvl!==0 && (data.balance!=0 || data.value ===\'Equity:\u20B4\' ) && data.value !== \'Assets:Cash\'&& data.value !== \'Liabilities:Bank Accounts:Initial\'"><span class=pull-right ng-init="_.total = +data.balance + _.total;">{{(data.value!==\'Equity:\u20B4\'?data.balance:_.cash)|currency:\'\'}}</span> <a href="#!/transaction/list?category={{data.value}}">{{data.category}} <span ng-if="data.category===\'\u20AC\'">{{reportService.getEuroBalance()}}</span> <span ng-if="data.category===\'$\'">{{reportService.getDollarBalance()}}</span></a></div></div><hr style="margin-bottom:5px"></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/report/balance.block.html', v1);}]);
-module.exports=v1
-
-/***/ }),
 /* 287 */
 /***/ (function(module, exports) {
 
-var v1='<div class="col-xs-12 app-main-col col-items"><small class="sub-heading hidden-xs">Current Balance</small><hr class="hidden-xs"><ng-include src="\'scripts/report/balance.block.html\'"></ng-include></div>';
+var v1='<div class="col-xs-12 app-main-col col-items"><small class="sub-heading hidden-xs">Current Balance</small><hr class="hidden-xs"><balance></balance></div>';
 angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/report/balance.page.html', v1);}]);
 module.exports=v1
 
@@ -39413,12 +39424,20 @@ module.exports=v1
 /* 288 */
 /***/ (function(module, exports) {
 
+var v1='<div><div ng-repeat="data in $ctrl.reportService.getCategoriesReport();" ng-if="data.value.indexOf(\'Expenses\')!==0 && data.value.indexOf(\'Revenue\')!==0"><h6 ng-if="data.lvl===0">{{data.category}}</h6><div ng-if="data.value === \'Assets:Cash\'" ng-init="$ctrl._.cash = data.balance;"></div><div ng-if="data.lvl!==0\n                && (data.balance!=0 || data.value ===\'Equity:\u20B4\' )\n                && data.value !== \'Assets:Cash\'\n                && data.value !== \'Liabilities:Bank Accounts:Initial\'"><span class=pull-right ng-init="$ctrl._.total = +data.balance + $ctrl._.total;">{{(data.value!==\'Equity:\u20B4\'?data.balance:$ctrl._.cash)|currency:\'\'}}</span> <a href="#!/transaction/list?category={{data.value}}">{{data.category}} <span ng-if="data.category===\'\u20AC\'">{{$ctrl.reportService.getEuroBalance()}}</span> <span ng-if="data.category===\'$\'">{{$ctrl.reportService.getDollarBalance()}}</span></a></div></div><hr style="margin-bottom:5px"></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/report/balance/balance.html', v1);}]);
+module.exports=v1
+
+/***/ }),
+/* 289 */
+/***/ (function(module, exports) {
+
 var v1='<ul class=app-list><li ng-repeat="data in reportService.getCategoriesReport()"><div class=row><div class=col-xs-8>{{data.name}}</div><div class="col-xs-4 text-right">{{data.balance}}</div></div></li></ul>';
 angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/report/categories.page.html', v1);}]);
 module.exports=v1
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports) {
 
 var v1='<ul class=app-list><li ng-repeat="data in report" ng-if="data.value.indexOf(\'Expenses:\')===0" ng-class="{\'hidden-xs\':data.value===\'Expenses\',\'empty\':data.balance==0}"><div class=row><div class=col-xs-8><a href="#!/transaction/list?category={{data.value}}&from={{filter.from ? filter.from.toISOString():\'\'}}&to={{filter.to ? filter.to.toISOString():\'\'}}">{{data.name}}</a></div><div class="col-xs-4 text-right" ng-if="data.lvl!==0">{{data.balance|currency:\'\'}}</div></div></li><li class=total-expenses>{{report.total|currency:\'\'}}</li></ul>';
@@ -39426,7 +39445,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, exports) {
 
 var v1='<div class=app-main-row><i class="glyphicon glyphicon-filter head-menu-icon visible-xs" ng-click="_.showFilter = !_.showFilter"></i><div class="hidden-xs col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-12 col-sm-4 col-lg-4 app-main-col col-items" ng-class="{\'hidden-xs\':!_.showFilter}"><br><label>From</label><input class=form-control type=date ng-model="filter.from"><br><label>To</label><input class=form-control type=date ng-model="filter.to"><br><button class="visible-xs btn btn-success pull-right" ng-click="_.showFilter=!_.showFilter;">Apply</button></div><div class="col-xs-12 col-sm-6 col-lg-4 app-main-col col-details" ng-class="{\'hidden-xs\':_.showFilter}"><ng-include src="\'scripts/report/expenses.block.html\'"></ng-include></div></div><button class="main-action btn btn-success" ng-click=transactionService.addTransaction().then(pageReload);><i class="glyphicon glyphicon-plus"></i></button>';
@@ -39434,23 +39453,23 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 291 */
-/***/ (function(module, exports) {
-
-var v1='<div><div class=row><div class="col-xs-6 ui-info"><a href=#!/contact/{{smsService.smsContactName(data)}}>{{smsService.smsContactName(data)}}</a></div><div class="col-xs-6 text-right ui-info">{{data.date|date:\'HH:mm d MMM yyyy\'}}</div><div class="col-xs-12 text-pre">{{data.body}}</div></div></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/sms/list-item.html', v1);}]);
-module.exports=v1
-
-/***/ }),
 /* 292 */
 /***/ (function(module, exports) {
 
-var v1='<ul class="app-list visible-xs"><li ng-repeat="data in smsService.getList()" ng-include="\'scripts/sms/list-item.html\'"></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in smsService.getList()" ng-include="\'scripts/sms/list-item.html\'"></li></ul></div></div>';
-angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/sms/list.page.html', v1);}]);
+var v1='<div><div class=row><div class="col-xs-6 ui-info"><a href=#!/contact/{{$ctrl.smsService.smsContactName($ctrl.data)}}>{{$ctrl.smsService.smsContactName($ctrl.data)}}</a></div><div class="col-xs-6 text-right ui-info">{{$ctrl.data.date|date:\'HH:mm d MMM yyyy\'}}</div><div class="col-xs-12 text-pre">{{$ctrl.data.body}}</div></div></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/sms/list-item/list-item.html', v1);}]);
 module.exports=v1
 
 /***/ }),
 /* 293 */
+/***/ (function(module, exports) {
+
+var v1='<ul class="app-list visible-xs"><li ng-repeat="data in smsService.getList()"><sms data=data></sms></li></ul><div class="hidden-xs app-main-row"><div class="col-xs-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-5 col-lg-4 app-main-col col-items"><ul class=app-list><li ng-repeat="data in smsService.getList()"><sms data=data></sms></li></ul></div></div>';
+angular.module('ng').run(['$templateCache', function ($templateCache) {$templateCache.put('scripts/sms/list.page.html', v1);}]);
+module.exports=v1
+
+/***/ }),
+/* 294 */
 /***/ (function(module, exports) {
 
 var v1='<form novalidate><div class=modal-body><div class=row><div class=col-xs-12><div class=form-group><label>Name</label><input class=form-control ng-model="transaction.name"></div></div><div class=col-xs-6><div class=form-group><label>From Category</label><select class=form-control ng-model=transaction.from><optgroup ng-repeat-start="c in categoryService.data.categoryOptions" label={{c.name}} ng-if="c.type==\'group\'"></optgroup><option ng-repeat-end value={{c.value}} ng-if="c.type==\'option\'">{{c.name}}</select></div></div><div class=col-xs-6><div class=form-group><label>To Category</label><select class=form-control ng-model=transaction.to><optgroup ng-repeat-start="c in categoryService.data.categoryOptions" label={{c.name}} ng-if="c.type==\'group\'"></optgroup><option ng-repeat-end value={{c.value}} ng-if="c.type==\'option\'">{{c.name}}</select></div></div><div class=col-xs-6><div class=form-group><label>Amount</label><input type=number step=0.01 min=0.01 class=form-control ng-model="transaction.amount"></div></div><div class=col-xs-6><div class=form-group><label>Date</label><input class=form-control type=date ng-model=transaction.date date-to-timestamp></div></div></div></div><div class=modal-footer><button class="btn btn-default" ng-click=cancel();>Cancel</button> <button class="btn btn-success" ng-disabled="!transaction.from || !transaction.to || !transaction.amount|| !transaction.date || !transaction.name" ng-click=save()>Save</button></div></form>';
@@ -39458,7 +39477,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, exports) {
 
 var v1='<form novalidate><div class=modal-body><div class=row><div class=col-xs-8><div class=form-group><label>Name (optional)</label><input class=form-control ng-model="transaction.name"></div></div><div class=col-xs-4><div class=form-group ng-init="showAmount = false;showDate=false;"><span ng-click="showAmount=!showAmount;showDate=false"><i class="glyphicon glyphicon-pencil"></i> Amount</span> &nbsp; <span ng-click="showDate=!showDate;showAmount=false;"><i class="glyphicon glyphicon-pencil"></i> Date</span><div ng-if=showAmount><label>Amount</label><input class=form-control ng-model="transaction.amount"></div><div ng-if=showDate><label>Date</label><input class=form-control type=date ng-model=transaction.manual_date date-to-timestamp></div></div></div><div class=col-xs-12><div class=form-group><label>To Category</label><select class=form-control ng-model=transaction.category><optgroup ng-repeat-start="c in categoryService.data.categoryOptions" label={{c.name}} ng-if="c.type==\'group\'"></optgroup><option ng-repeat-end value={{c.value}} ng-if="c.type==\'option\'">{{c.name}}</select></div></div></div></div><div class=modal-footer><button class="btn btn-default" ng-click=cancel();>Cancel</button> <button class="btn btn-success" ng-disabled=!transaction.category ng-click=save()>Save</button></div></form>';
@@ -39466,7 +39485,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, exports) {
 
 var v1='<div class="col-xs-12 transaction-filters"><div class=row><div class=col-xs-12>Bank:<select ng-model=filter.bank class=form-control><option value="">All<option value=OTP>OTP<option value=UKRSIB>UKRSIB</select></div><div class=col-xs-12>Type:<select ng-model=filter.type class="form-control text-right"><option value="">All<option value=Deductions>Deductions<option value=Cash>Cash<option value=Income>Income<option value=Spam>Spam<option value=Manual>Manual</select></div><div class=col-xs-12>Status<select ng-model=filter.category class=form-control><option value=all>All<option value=categorized>Categorized<option value=uncategorized>Uncategorized</select></div><div class=col-xs-12 ng-if="filter.category===\'categorized\'">Category<select ng-model=filter.byCategory class=form-control ng-options="o.value as o.name for o in categoryService.data.categoryOptions"><option value="">All Categories</select></div><div class=col-xs-12>From:<br><input type=date class="form-control inline" ng-model="filter.from"></div><div class=col-xs-12>To:<br><input type=date class="form-control inline" ng-model="filter.to"></div><div class="visible-xs col-xs-12"><hr><button class="btn btn-success pull-right" ng-click="_.showFilter = false;">Apply</button> <a href=#!/filter/list class=text-center>Show Filters</a></div></div></div>';
@@ -39474,7 +39493,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, exports) {
 
 var v1='<div class=row><div class="col-md-1 hidden-xs" ng-if="data.type!==\'Spam\' && data.type!==\'Manual\'"><i class="glyphicon glyphicon-edit" ng-click=transactionService.categorizeTransaction(data)></i></div><div class=col-xs-12 ng-class="{\'col-md-11\': data.type!==\'Spam\' && data.type!==\'Manual\'}"><i class="glyphicon glyphicon-remove pull-right" ng-click=transactionService.removeTransaction(data).then(transactionsInit) ng-if="data.type===\'Manual\'"></i> <b>{{data.type===\'Deductions\'?data.name || data.place:( data.type===\'Manual\'?data.name:data.type)}}</b></div><div class=col-xs-12 ng-if="data.type===\'Spam\'">{{data.sms_body}}</div><div class=col-xs-6 title={{data.date}} ng-class="{edited: data.manual_date}"><span class=date>{{transactionService.transactionDate(data)|date:\'HH:mm dd/MM/yyyy\'}}</span></div><div class="col-xs-6 text-right" ng-if="data.type!==\'Spam\'">{{data.amount}}</div><div class=col-xs-4 ng-class="{\'col-xs-6 text-right\':data.type===\'Spam\'}">{{data.bank||data.from}}</div><div class="col-xs-8 text-right" ng-if="data.type!==\'Spam\'">{{data.category||data.to}} <button class="btn btn-primary btn-wide" ng-if=!data.category&&!data.to ng-click=transactionService.categorizeTransaction(data)>Categorize</button></div></div>';
@@ -39482,7 +39501,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, exports) {
 
 var v1='<div class=app-main-row><i class="glyphicon glyphicon-filter head-menu-icon visible-xs" ng-click="_.showFilter = !_.showFilter"></i><div class="hidden-xs col-sm-3 app-main-col col-menu" ng-include="\'scripts/app/menu.html\'"></div><div class="col-xs-12 col-sm-4 col-lg-4 app-main-col col-items" ng-class="{\'hidden-xs\':!_.showFilter}" ng-include="\'scripts/transaction/filters.block.html\'"></div><div class="col-xs-12 col-sm-6 col-lg-4 app-main-col col-details" ng-class="{\'hidden-xs\':_.showFilter}" ng-include="\'scripts/transaction/list.view.html\'"></div></div><button class="main-action btn btn-success" ng-click=transactionService.addTransaction().then(transactionsInit);><i class="glyphicon glyphicon-plus"></i></button>';
@@ -39490,7 +39509,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, exports) {
 
 var v1='<ul class=app-list><li ng-repeat="data in trResults = (transactionList|filter:filterTransactions)" ng-include="\'scripts/transaction/list-item.html\'"></li></ul><div class=no-results ng-if="trResults.length===0">No {{isUncategorizedFilter()?\'Uncategorized\':\'\'}} Transactions</div>';
@@ -39498,7 +39517,7 @@ angular.module('ng').run(['$templateCache', function ($templateCache) {$template
 module.exports=v1
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, exports) {
 
 /*
@@ -46850,16 +46869,16 @@ angular.module('ui.bootstrap.timepicker').run(function() {!angular.$$csp().noInl
 angular.module('ui.bootstrap.typeahead').run(function() {!angular.$$csp().noInlineStyle && !angular.$$uibTypeaheadCss && angular.element(document).find('head').prepend('<style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style>'); angular.$$uibTypeaheadCss = true; });
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(299);
+__webpack_require__(300);
 
 module.exports = 'ui.bootstrap';
 
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47436,7 +47455,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47732,7 +47751,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47752,16 +47771,16 @@ __export(__webpack_require__(37));
 __export(__webpack_require__(38));
 __export(__webpack_require__(65));
 __export(__webpack_require__(66));
-__webpack_require__(304);
-__webpack_require__(301);
-__webpack_require__(306);
+__webpack_require__(305);
 __webpack_require__(302);
-__webpack_require__(309);
+__webpack_require__(307);
+__webpack_require__(303);
+__webpack_require__(310);
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48135,7 +48154,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 305 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48216,7 +48235,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 306 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48268,7 +48287,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 307 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48299,7 +48318,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 308 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48499,7 +48518,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 309 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48528,7 +48547,7 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 310 */
+/* 311 */
 /***/ (function(module, exports) {
 
 /**
@@ -82892,18 +82911,18 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 311 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * @namespace Chart
  */
-var Chart = __webpack_require__(330)();
+var Chart = __webpack_require__(331)();
 
 Chart.helpers = __webpack_require__(2);
 
 // @todo dispatch these helpers into appropriated helpers/helpers.* file and write unit tests!
-__webpack_require__(329)(Chart);
+__webpack_require__(330)(Chart);
 
 Chart.defaults = __webpack_require__(4);
 Chart.Element = __webpack_require__(9);
@@ -82914,40 +82933,40 @@ Chart.platform = __webpack_require__(69);
 Chart.plugins = __webpack_require__(68);
 Chart.Ticks = __webpack_require__(22);
 
-__webpack_require__(326)(Chart);
 __webpack_require__(327)(Chart);
 __webpack_require__(328)(Chart);
-__webpack_require__(332)(Chart);
-__webpack_require__(331)(Chart);
+__webpack_require__(329)(Chart);
 __webpack_require__(333)(Chart);
+__webpack_require__(332)(Chart);
+__webpack_require__(334)(Chart);
 
-__webpack_require__(349)(Chart);
-__webpack_require__(347)(Chart);
-__webpack_require__(348)(Chart);
 __webpack_require__(350)(Chart);
+__webpack_require__(348)(Chart);
+__webpack_require__(349)(Chart);
 __webpack_require__(351)(Chart);
 __webpack_require__(352)(Chart);
+__webpack_require__(353)(Chart);
 
 // Controllers must be loaded after elements
 // See Chart.core.datasetController.dataElementType
-__webpack_require__(319)(Chart);
 __webpack_require__(320)(Chart);
 __webpack_require__(321)(Chart);
 __webpack_require__(322)(Chart);
 __webpack_require__(323)(Chart);
 __webpack_require__(324)(Chart);
 __webpack_require__(325)(Chart);
+__webpack_require__(326)(Chart);
 
-__webpack_require__(312)(Chart);
 __webpack_require__(313)(Chart);
 __webpack_require__(314)(Chart);
 __webpack_require__(315)(Chart);
 __webpack_require__(316)(Chart);
 __webpack_require__(317)(Chart);
 __webpack_require__(318)(Chart);
+__webpack_require__(319)(Chart);
 
 // Loading built-it plugins
-var plugins = __webpack_require__(343);
+var plugins = __webpack_require__(344);
 for (var k in plugins) {
 	if (plugins.hasOwnProperty(k)) {
 		Chart.plugins.register(plugins[k]);
@@ -83020,7 +83039,7 @@ Chart.layoutService = Chart.layouts;
 
 
 /***/ }),
-/* 312 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83038,7 +83057,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 313 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83055,7 +83074,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 314 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83073,7 +83092,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 315 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83091,7 +83110,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 316 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83109,7 +83128,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 317 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83127,7 +83146,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 318 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83142,7 +83161,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83653,7 +83672,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 320 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83840,7 +83859,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84146,7 +84165,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84486,7 +84505,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84715,7 +84734,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84890,7 +84909,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84939,7 +84958,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -85118,7 +85137,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86072,7 +86091,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86409,7 +86428,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87027,7 +87046,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87083,7 +87102,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -88026,7 +88045,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -88079,7 +88098,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89034,7 +89053,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89148,7 +89167,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89246,7 +89265,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89359,7 +89378,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89583,7 +89602,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89804,7 +89823,7 @@ helpers.drawRoundedRectangle = function(ctx) {
 
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -90061,7 +90080,7 @@ helpers.easingEffects = effects;
 
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -90164,7 +90183,7 @@ module.exports = {
 
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports) {
 
 /**
@@ -90185,7 +90204,7 @@ module.exports = {
 
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -90649,20 +90668,20 @@ helpers.removeEvent = removeEventListener;
 
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = {};
-module.exports.filler = __webpack_require__(344);
-module.exports.legend = __webpack_require__(345);
-module.exports.title = __webpack_require__(346);
+module.exports.filler = __webpack_require__(345);
+module.exports.legend = __webpack_require__(346);
+module.exports.title = __webpack_require__(347);
 
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -90987,7 +91006,7 @@ module.exports = {
 
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91570,7 +91589,7 @@ module.exports = {
 
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91829,7 +91848,7 @@ module.exports = {
 
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91969,7 +91988,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -92167,7 +92186,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -92360,7 +92379,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -92714,7 +92733,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -93250,7 +93269,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -94040,11 +94059,11 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var colorNames = __webpack_require__(356);
+var colorNames = __webpack_require__(357);
 
 module.exports = {
    getRgba: getRgba,
@@ -94267,7 +94286,7 @@ for (var name in colorNames) {
 
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, exports) {
 
 /* MIT license */
@@ -94971,10 +94990,10 @@ for (var key in cssKeywords) {
 
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var conversions = __webpack_require__(354);
+var conversions = __webpack_require__(355);
 
 var convert = function() {
    return new Converter();
@@ -95068,7 +95087,7 @@ Converter.prototype.getValues = function(space) {
 module.exports = convert;
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95227,13 +95246,13 @@ module.exports = {
 
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -112335,10 +112354,10 @@ module.exports = {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(403), __webpack_require__(192)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(410), __webpack_require__(192)(module)))
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -112601,10 +112620,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 359;
+webpackContext.id = 360;
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112750,7 +112769,16 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 361 */
+/* 362 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+
+/* harmony default export */ __webpack_exports__["a"] = ([function () {}]);
+
+/***/ }),
+/* 363 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112771,7 +112799,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 362 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112792,7 +112820,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 363 */
+/* 365 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112821,7 +112849,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 364 */
+/* 366 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112840,7 +112868,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 365 */
+/* 367 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112856,7 +112884,25 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 366 */
+/* 368 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_html__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__menu_html__);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    bindings: {
+        sms: '<'
+    },
+    template: __WEBPACK_IMPORTED_MODULE_0__menu_html___default.a,
+    controller: function () {}
+});
+
+/***/ }),
+/* 369 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112891,7 +112937,7 @@ webpackContext.id = 359;
 });
 
 /***/ }),
-/* 367 */
+/* 370 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112922,7 +112968,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 368 */
+/* 371 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112949,7 +112995,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 369 */
+/* 372 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113032,7 +113078,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 370 */
+/* 373 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113044,7 +113090,25 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 371 */
+/* 374 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__list_item_html__);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    bindings: {
+        data: '<'
+    },
+    template: __WEBPACK_IMPORTED_MODULE_0__list_item_html___default.a,
+    controller: function () {}
+});
+
+/***/ }),
+/* 375 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113058,19 +113122,16 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 372 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_page_html__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_page_html__ = __webpack_require__(271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__add_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_page_html__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_page_html__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__item_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_item_html__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__list_item_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_page_html__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__list_page_html__);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__list_page_html__);
 
 
 
@@ -113099,7 +113160,7 @@ webpackContext.id = 359;
 });
 
 /***/ }),
-/* 373 */
+/* 377 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113121,7 +113182,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 374 */
+/* 378 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113223,7 +113284,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 375 */
+/* 379 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113238,15 +113299,15 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 376 */
+/* 380 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__add_modal_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_html__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_html__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__item_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__list_page_html__);
 
 
@@ -113266,7 +113327,7 @@ webpackContext.id = 359;
 });
 
 /***/ }),
-/* 377 */
+/* 381 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113285,7 +113346,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 378 */
+/* 382 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113297,7 +113358,25 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 379 */
+/* 383 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__list_item_html__);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    bindings: {
+        data: '<'
+    },
+    template: __WEBPACK_IMPORTED_MODULE_0__list_item_html___default.a,
+    controller: function () {}
+});
+
+/***/ }),
+/* 384 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113308,17 +113387,14 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 380 */
+/* 385 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_page_html__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_page_html__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__item_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_page_html__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_page_html__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__list_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_item_html__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__list_item_html__);
-
 
 
 
@@ -113341,7 +113417,7 @@ webpackContext.id = 359;
 });
 
 /***/ }),
-/* 381 */
+/* 386 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113359,7 +113435,7 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 382 */
+/* 387 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113414,7 +113490,25 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 383 */
+/* 388 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__list_item_html__);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    bindings: {
+        data: '<'
+    },
+    template: __WEBPACK_IMPORTED_MODULE_0__list_item_html___default.a,
+    controller: function () {}
+});
+
+/***/ }),
+/* 389 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113425,17 +113519,14 @@ webpackContext.id = 359;
 }]);
 
 /***/ }),
-/* 384 */
+/* 390 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__add_modal_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_item_html__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__list_item_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__list_page_html__);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_page_html__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__list_page_html__);
 
 
 
@@ -113453,7 +113544,7 @@ webpackContext.id = 359;
 });
 
 /***/ }),
-/* 385 */
+/* 391 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113488,7 +113579,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IMPORTED_MODULE_2__core__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_1__app__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_3__bank__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_4__category__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_5__contact__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_6__filter__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_7__report__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_8__sms__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_9__transaction__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_10__investment__["a" /* default */].name]);
 
 /***/ }),
-/* 386 */
+/* 392 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113616,7 +113707,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 387 */
+/* 393 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113625,7 +113716,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 /* harmony default export */ __webpack_exports__["a"] = ([function () {}]);
 
 /***/ }),
-/* 388 */
+/* 394 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114100,15 +114191,15 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 389 */
+/* 395 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_page_html__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_page_html__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dashboard_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__instrument_page_html__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__instrument_page_html__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__instrument_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__instrument_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__list_page_html__);
 
 
@@ -114138,16 +114229,26 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 });
 
 /***/ }),
-/* 390 */
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__balance_html__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__balance_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__balance_html__);
 
 
-/* harmony default export */ __webpack_exports__["a"] = ([function () {}]);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    template: __WEBPACK_IMPORTED_MODULE_0__balance_html___default.a,
+    controller: ['ReportService', function (ReportService) {
+        this._ = { total: 0, cash: 0 };
+        this.reportService = ReportService;
+    }]
+});
 
 /***/ }),
-/* 391 */
+/* 397 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114160,7 +114261,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 392 */
+/* 398 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114187,7 +114288,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 393 */
+/* 399 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114312,21 +114413,18 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 394 */
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__balance_block_html__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__balance_block_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__balance_block_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__balance_page_html__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__balance_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__balance_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories_page_html__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__categories_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__categories_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__expenses_block_html__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__expenses_block_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__expenses_block_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__expenses_page_html__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__expenses_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__expenses_page_html__);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__balance_page_html__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__balance_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__balance_page_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categories_page_html__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categories_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__categories_page_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__expenses_block_html__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__expenses_block_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__expenses_block_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__expenses_page_html__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__expenses_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__expenses_page_html__);
 
 
 
@@ -114350,13 +114448,33 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
     }).state('report_balance', {
         url: '/report/balance',
         templateUrl: 'scripts/report/balance.page.html',
-        controller: 'ReportBalanceCtrl',
+        controller: 'DummyCtrl',
         title: 'Balance'
     });
 });
 
 /***/ }),
-/* 395 */
+/* 401 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__list_item_html__);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    bindings: {
+        data: '<'
+    },
+    template: __WEBPACK_IMPORTED_MODULE_0__list_item_html___default.a,
+    controller: ['SmsService', function (SmsService) {
+        this.smsService = SmsService;
+    }]
+});
+
+/***/ }),
+/* 402 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114367,15 +114485,12 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 396 */
+/* 403 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_page_html__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_page_html__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__list_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_item_html__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__list_item_html__);
-
 
 
 
@@ -114392,7 +114507,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 });
 
 /***/ }),
-/* 397 */
+/* 404 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114442,7 +114557,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 398 */
+/* 405 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114466,7 +114581,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 399 */
+/* 406 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114499,7 +114614,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 400 */
+/* 407 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114560,21 +114675,21 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 401 */
+/* 408 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html__ = __webpack_require__(294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__add_modal_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__add_modal_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categorize_modal_html__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categorize_modal_html__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__categorize_modal_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__categorize_modal_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filters_block_html__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filters_block_html__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filters_block_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__filters_block_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_item_html__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_item_html__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_item_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__list_item_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_page_html__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_page_html__ = __webpack_require__(298);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_page_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__list_page_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list_view_html__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list_view_html__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__list_view_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__list_view_html__);
 
 
@@ -114589,7 +114704,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
     'ngInject';
 
     $stateProvider.state('transaction_list', {
-        url: '/transaction/list',
+        url: '/transaction/list?from&to&category',
         templateUrl: 'scripts/transaction/list.page.html',
         controller: 'TransactionListCtrl',
         title: 'Transactions'
@@ -114597,7 +114712,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 });
 
 /***/ }),
-/* 402 */
+/* 409 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114816,7 +114931,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
 }]);
 
 /***/ }),
-/* 403 */
+/* 410 */
 /***/ (function(module, exports) {
 
 var g;
