@@ -112711,7 +112711,7 @@ webpackContext.id = 360;
     $scope.syncMerge = function (response) {
         var d = $q.defer();
         var backupData = response.data;
-
+        console.log(backupData);
         $storage.set('smsList', $scope.merge(backupData.smsList, $storage.get('smsList') || [], SmsService.smsId));
 
         $storage.set('filterList', $scope.merge($storage.get('filterList') || [], backupData.filterList, function (a) {
@@ -112726,6 +112726,7 @@ webpackContext.id = 360;
         $storage.set('manualTransactions', $scope.merge($storage.get('manualTransactions') || [], backupData.transactions.manual, function (t) {
             return t.name + t.date;
         }));
+        console.log($storage.get('manualTransactions'), backupData.transactions.manual);
         $storage.set('categorizeTransactions', _.extend($storage.get('categorizeTransactions') || {}, backupData.transactions.categorize));
 
         d.resolve();
