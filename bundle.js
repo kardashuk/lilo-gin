@@ -112698,7 +112698,7 @@ webpackContext.id = 360;
         }, $scope.syncSkip);
     };
     $scope.merge = function (arr1, arr2, cmpId) {
-        return _.uniq(_.union(arr1, arr2), false, cmpId);
+        return _.uniqBy(_.union(arr1, arr2), cmpId);
     };
     $scope.syncCourses = function () {
         var d = $q.defer();
@@ -112726,7 +112726,7 @@ webpackContext.id = 360;
         $storage.set('manualTransactions', $scope.merge($storage.get('manualTransactions') || [], backupData.transactions.manual, function (t) {
             return t.name + t.date;
         }));
-        console.log($storage.get('manualTransactions'), backupData.transactions.manual);
+        console.log(angular.copy($storage.get('manualTransactions')), angular.copy(backupData.transactions.manual));
         $storage.set('categorizeTransactions', _.extend($storage.get('categorizeTransactions') || {}, backupData.transactions.categorize));
 
         d.resolve();
