@@ -113968,7 +113968,8 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
             '2018-01': 2980.89,
             '2018-02': 3013.74,
             '2018-03': 3039.64,
-            '2018-04': $scope.courses['otp-classic']
+            '2018-04': 3069.22,
+            '2018-05': $scope.courses['otp-classic']
         },
         'otp-shares': {
             '2017-03': 0.93,
@@ -113984,7 +113985,8 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
             '2018-01': 1.18,
             '2018-02': 1.25,
             '2018-03': 1.25,
-            '2018-04': $scope.courses['otp-shares']
+            '2018-04': 1.26,
+            '2018-05': $scope.courses['otp-shares']
         }
     };
 
