@@ -114797,7 +114797,7 @@ __WEBPACK_IMPORTED_MODULE_0_angular___default.a.module('iBalance', [__WEBPACK_IM
                     bank.keywords.balance = { from: ['zalyshok ', 'Dostupno '], to: 'UAH' };
                     bank.keywords.amount = { from: [' na sumu ', 'Suma '], to: 'UAH' };
                     bank.keywords.place = {
-                        from: ['Oplata tovariv: ', 'Blokuvannia koshtiv: ', 'Oplata: ','Perekaz: ', 'Oplata poslug'],
+                        from: ['Oplata tovariv: ','Oplata mobilnogo', 'Blokuvannia koshtiv: ', 'Oplata: ','Perekaz: ', 'Oplata poslug'],
                         to: [' UA ', ' BV', ' NL']
                     };
                 } else if (bank.name === 'OTP') {
